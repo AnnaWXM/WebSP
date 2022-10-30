@@ -1,0 +1,10 @@
+
+services:
+  api:
+    build:
+      context: ./api
+    ports:
+      - '5001:5001'
+    volumes:
+      - './api:/opt/app'
+    restart: always
